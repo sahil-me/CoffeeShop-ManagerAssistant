@@ -44,9 +44,11 @@ The application is deployed as a containerized service on **Google Cloud Run**, 
 
 ## Architecture Diagram
 
-The following diagram illustrates the high-level architecture of **CoffeeShop Manager Assistant**, including the user's browser, Cloud Run service, FastAPI application, Google ADK agent, Gemini model, Cloud Run sandbox, and Google Sheets integration.
+The following diagram illustrates the high-level architecture of **CoffeeShop Manager Assistant**, including the user's browser, Google Cloud Run, FastAPI application, Google Agent Development Kit (ADK), Gemini-powered `LlmAgent`, Cloud Run sandbox, and Google Sheets integration.
 
-**
+The architecture is based on the approach demonstrated in Google's official CoffeeShop Manager Assistant codelab and adapted for this project.
+
+<img width="752" height="361" alt="Architecture Diagram" src="https://github.com/user-attachments/assets/9ba532d9-09ed-45c4-b45d-082589c8d9b5" />
 
 ### Architecture Overview
 
@@ -67,10 +69,10 @@ The following diagram illustrates the high-level architecture of **CoffeeShop Ma
 
 4. **Google Agent Development Kit (ADK)**
    - Provides the agent development and execution framework.
-   - Connects the Gemini-powered agent with the available tools.
+   - Connects the application with the Gemini-powered agent and available tools.
    - Manages the agent runner and in-memory session service.
 
-5. **Gemini-Powered LlmAgent**
+5. **Gemini-Powered `LlmAgent`**
    - Acts as the coffee shop business analyst.
    - Interprets the manager's request.
    - Determines how historical data, schedules, and operational information should be analyzed.
@@ -87,7 +89,7 @@ The following diagram illustrates the high-level architecture of **CoffeeShop Ma
    - Writes approved staffing and inventory tasks after manager confirmation.
 
 8. **Gemini Model**
-   - Provides model inference for understanding requests, analyzing available information, and generating recommendations.
+   - Provides model inference for understanding manager requests, analyzing available information, and generating recommendations.
 
 ---
 
