@@ -1,6 +1,6 @@
 # 🤖 CoffeeShop Manager Assistant ☕
 
-**
+https://github.com/user-attachments/assets/09fda755-6e0b-48ce-b0dd-1f90b72942e7
 
 > 🎥  Watch **CoffeeShop Manager Assistant** in action!
 
