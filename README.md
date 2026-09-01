@@ -4,6 +4,9 @@ https://github.com/user-attachments/assets/09fda755-6e0b-48ce-b0dd-1f90b72942e7
 
 > 🎥  Watch **CoffeeShop Manager Assistant** in action!
 
+> [!CAUTION]
+> The Cloud Run deployment is currently unavailable because the Google Cloud project has exhausted its available credits. The project was previously deployed and tested successfully on Google Cloud Run.
+
 ---
 
 ## Table of Contents
@@ -111,6 +114,7 @@ The architecture is based on the approach demonstrated in Google's official Coff
 └── SECURITY.md
   ```
 
+> [!NOTE]
 > The `coffee-mgr-agent/` directory contains the main **CoffeeShop Manager Assistant** implementation, including the ADK agent, FastAPI application, Google Sheets tools, Cloud Run sandbox integration, WebSocket routing, and web interface.
 
 ---
@@ -227,7 +231,8 @@ The spreadsheet contains historical `POS-2025` data used for analysis and a `TOD
 
 📊 **[View the Coffee Shop Operations Spreadsheet](https://docs.google.com/spreadsheets/d/1ZjCMNEjKtd51O3xk3uGjUj26nj_QDWq6s5xVlTy_Wj0/edit?gid=0#gid=0)**
 
-> **Note:** The spreadsheet may require appropriate Google account permissions to access.
+> [!NOTE]
+> The spreadsheet may require appropriate Google account permissions to access.
 
 ---
 
